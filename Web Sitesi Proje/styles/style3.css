@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+
+:root {
+    --main-color: #ab4bab;
+    --black-color: #1b1b1b;
+    --border: 0.1rem solid rgba(195, 98, 139, 0.418);
+}
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 5;
+    padding: 1;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: none;
+    transition: 0.2s ease;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+
+
+}
+
+body {
+    background-color: var(--main-color);
+    height: 100vh;
+
+}
+
+section {
+    padding: 3.5rem 7%;
+
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 2rem 3.75rem;
+    border-radius: 30rem;
+    font-size: 1.7rem;
+    color: #ffffff;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+/* header start */
+.header .logo img {
+    height: 11rem;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 7%;
+    margin: 1rem 7%;
+    border-radius: 30rem;
+    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: var(--black-color);
+    border-bottom: 0.2rem solid transparent;
+}
+
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.header .buttons button {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: 2rem;
+    background-color: transparent;
+
+}
+
+
+/* header end */
+
+/* home section start */
+
+.home {
+    min-height: 100vh;
+    background: url(../images/cat1.jpg);
+    no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-top: -16.5rem;
+    margin-left: -1.3rem;
+    margin-right: -1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.home .content {
+    max-width: 130rem;
+    align-items: center;
+    background-size: cover;
+    align-items: center;
+
+}
+
+.home .content h3 {
+    margin-top: 160;
+    font-size: 5rem;
+
+}
+.home .content h4 {
+    font-size: 4rem;
+
+
+}
+
+.home .content p {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--black-color)
+}
+
+/* home section end */
+
+/* anasayfa start */
+
+.anasayfa .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.anasayfa .box-container .box {
+    padding: 3rem;
+    background-color: #ffffff;
+    border-radius: 3rem;
+}
+
+.anasayfa .box-container .box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* anasayfa end */

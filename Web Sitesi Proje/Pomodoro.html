@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="styles/style2.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">
+            <img src="images/logo.png" alt="Logo">
+        </a>
+        <nav class="navbar">
+            <a href="file:///C:/Users/pc/Desktop/Web%20Sitesi%20Proje/Anasayfa.html">Anasayfa</a>
+            <a href="file:///C:/Users/pc/Desktop/Web%20Sitesi%20Proje/Pomodoro.html#" class="active">Pomodoro</a>
+            <a href="file:///C:/Users/pc/Desktop/Web%20Sitesi%20Proje/Zeka%20Sorular%C4%B1.html">Zeka Soruları</a>
+            <a href="file:///C:/Users/pc/Desktop/Web%20Sitesi%20Proje/Nasil.html">Nasıl Ders Çalışılır?</a>
+        </nav>
+        <div class="buttons">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="painel">
+                <p id="work"><b>Work</b></p>
+                <p id="break"><b>Break</b></p>
+            </div>
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes"></p>
+                        <p>:</p>
+                        <p id="seconds"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="start" onclick="start()">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <a id="reset" href="./">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
